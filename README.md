@@ -1,3 +1,3 @@
 # HYPERCOMIC
 
-HYCO Vestion Contract
+HYCO Vesting Contract
