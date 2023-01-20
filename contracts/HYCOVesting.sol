@@ -71,7 +71,6 @@ contract HYCOVesting is Ownable, Confirmer {
     }
     function setVestingAmount (address beneficiaryAddress, uint256 value) external onlyOwner isConfirmed {
         require(_vestingInfos[beneficiaryAddress].amount > 0, "Not exist vesting info.");
-        require(value > 0, "ERC20: Amount is smaller than 0.");
         _vestingInfos[beneficiaryAddress].amount = value;
 
         emit UpdateVesting( beneficiaryAddress, 1, value );
