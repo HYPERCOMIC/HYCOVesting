@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
     const ContractCode = await hre.ethers.getContractFactory("HYCOClaim");
-    const contractCode = await ContractCode.deploy("0x35973aa36974eaEB162bddFB90B1581948c140C3");
+    const contractCode = await ContractCode.deploy("0x77F76483399Dc6328456105B1db23e2Aca455bf9");
 
     await contractCode.deployed();
 
